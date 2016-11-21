@@ -1,12 +1,11 @@
 function setup() {
-  createCanvas(480,620);
+  createCanvas(320,240);
   background(51);
   createCapture(VIDEO);
 }
 
 function draw() {
-  
-}
+  }
 
 
 //function draw() {
