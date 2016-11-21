@@ -1,31 +1,29 @@
+var video;
+
+var x = 0;
+
 function setup() {
-  createCanvas(320,240);
+  createCanvas(800, 240);
+  pixelDensity(1);
+ video = createCapture(VIDEO);
+ video.size(320, 240);
   background(51);
-  createCapture(VIDEO);
 }
 
+
 function draw() {
+
+ video.loadPixels();
+ //image(video, 0, 0);
+  
+  var w = video.width;
+  var h = video.height;
+  
+  copy(video, w/2, 0, 1, h/2, x, 0, 1, h/2);
+  
+  x = x+1;
+  if (x > width) {
+    x = 0;
   }
-
-
-//function draw() {
-  //background(200,200,0);
-  //rectMode(CENTER);
-  //ellipseMode(CENTER);
-  
-  //Body
-  //fill(0,0,255);
-  //rect(240,310,50,120);
-  
-  //head
-  //fill(100,140,20,200);
-  //ellipse(240,219,60,60);
-  
-  //Legs
-  //line(215,370,85,520);
-  //line(265,370,400,520);
-  
-  //edit
-  //rect(200,200,40,40);
   
 }
