@@ -3,17 +3,12 @@ var x = 0;
 
 function setup() {
   createCanvas(800, 240);
-  pixelDensity(1);
+  pixelDensity(0);
   video = createCapture(VIDEO);
   video.size(320, 240);
   background(50);
 }
 
-function mousePressed() {
-  if (mouseX > 0 && mouseX < 100 && mouseY > 0 && mouseY < 100) {
-    var fs = fullscreen();
-    fullscreen(!fs);}
-}
 
 function draw() {
 
