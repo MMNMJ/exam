@@ -5,7 +5,7 @@ function setup() {
   createCanvas(1000, 240);
   pixelDensity(1);
   video = createCapture(VIDEO);
-  video.size(480, 240);
+  video.size(1000, 240);
   background(50);
 }
 
