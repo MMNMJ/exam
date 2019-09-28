@@ -2,10 +2,10 @@ var video;
 var x = 0;
 
 function setup() {
-  createCanvas(1000, 500);
+  createCanvas(1000, 256);
   pixelDensity(1);
   video = createCapture(VIDEO);
-  video.size(1000, 500);
+  video.size(1000, 256);
   background(50);
 }
 
